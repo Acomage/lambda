@@ -10,8 +10,7 @@ class Lambda:
         pass
     def beta_reduce(self):
         pass
-
-
+      
 class Variable(Lambda):
     def __init__(self, name:str):
         self.name = name 
@@ -67,4 +66,5 @@ if  __name__ == '__main__':
     print(Application(Successor, Zero).show())
     print(Application(Successor, Zero).beta_reduce().show())
     print(Application(Zero, Variable('f')).beta_reduce().show())
+
 
